@@ -1,15 +1,13 @@
 import React from "react";
 import {Link} from "react-router-dom";
+import BasicLayout from "../layouts/BasicLayout";
 
 const AboutPage = ((props) => {
   return (
       <>
-        <div className={'text-3xl'}>
-          About Page
-        </div>
-        <div>
-          <Link to={'/'}>Main Page</Link>
-        </div>
+        <BasicLayout>
+          <div className={'text-3xl'}>About Page</div>
+        </BasicLayout>
       </>
   );
 })
