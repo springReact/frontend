@@ -4,14 +4,14 @@ import {Outlet, useNavigate} from "react-router-dom";
 
 const IndexPage = ((props) => {
 
-  const nevigate = useNavigate();
+  const navigate = useNavigate();
 
   const handleClickList = useCallback(() => {
-    nevigate({pathname: 'list'})
+    navigate({pathname: 'list'})
   }, [])
 
   const handleClickAdd = useCallback(() => {
-    nevigate({pathname: 'add'})
+    navigate({pathname: 'add'})
   }, [])
 
   return (

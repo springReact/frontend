@@ -1,11 +1,15 @@
-import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const ModifyPage = ((props) => {
+const ModifyPage = ({tno}) => {
+  const navigate = useNavigate()
+  const moveToRead = () => {
+    navigate({pathname:`/todo/read/${tno}`})
+  }
+  const moveToList = () => {
+    navigate({pathname:`/todo/list`})
+  }
   return (
-      <>
-        <div>Todo Modify Page</div>
-      </>
+      <div className="text-3xl font-extrabold"> Todo Modify Page </div>
   );
-});
-
+}
 export default ModifyPage;
